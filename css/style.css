@@ -27,6 +27,7 @@ header {
 }
 
 /* MAIN CLASSES */
+
 main {
     padding-top: 5rem;
 }
@@ -42,5 +43,19 @@ main {
 @media screen and (min-width: 992px) {
     #sidebar {
         width: 10rem;
+    }
+}
+
+/* DASHBOARD CLASSES */
+
+#dashboard-header {
+    height: 15rem;
+    width: 100%;
+    background-color: cadetblue;
+}
+
+@media screen and (min-width: 992px) {
+    #dashboard-header {
+        height: 5rem;
     }
 }
