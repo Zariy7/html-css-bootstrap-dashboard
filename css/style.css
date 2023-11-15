@@ -54,8 +54,17 @@ main {
     background-color: cadetblue;
 }
 
+#dashboard-container {
+    height: calc(100vh - 20rem);
+    overflow-y: auto;
+}
+
 @media screen and (min-width: 992px) {
     #dashboard-header {
         height: 5rem;
+    }
+
+    #dashboard-container {
+        height: calc(100vh - 10rem);
     }
 }
