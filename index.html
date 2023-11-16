@@ -78,39 +78,40 @@
                             <div class="d-none d-lg-inline">Admin</div>
                         </div>
                     </div>
-    
                 </div>
-                <div class="w-100 text-white overflow-auto" id="dashboard">
+                <div class="w-100 text-white" id="dashboard">
                     <div id="dashboard-header">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-md-4 py-3 order-md-1">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-3 py-3 order-md-1">
                                     <div class="d-flex">
-                                        <div>Nuovo Studente</div>
-                                        <div>
-                                            <i class="fa-solid fa-plus"></i>
+                                        <div class="m-2">Nuovo Studente</div>
+                                        <div class="border rounded m-2">
+                                            <i class="fa-solid fa-plus m-2"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 py-3">
+                                <div class="col-12 col-md-6">
                                     <div>
-                                        <div class="d-flex">
-                                            <div>Boolean</div>
-                                            <div >Piano Blaze</div>
+                                        <div class="d-flex align-items-center">
+                                            <h3>Boolean</h3>
+                                            <div class="dashboard-button mx-2">Piano Blaze</div>
                                         </div>
                                         <div class="d-flex">
-                                            <div>3 app</div>
-                                            <div>>></div>
-                                            <div class="d-inline d-lg-none">&plus;</div>
+                                            <div>
+                                                <div class="dashboard-button">3 app</div>
+                                            </div>
+                                            <div class="mx-2">>></div>
+                                            <div class="d-inline d-lg-none dashboard-button">&plus;</div>
                                             <div>
                                                 <ul class="list-unstyled d-none d-lg-flex">
-                                                    <li>
+                                                    <li class="dashboard-button">
                                                         Boolean mobile app
                                                     </li>
-                                                    <li>
+                                                    <li class="dashboard-button mx-2">
                                                         Boolean web app
                                                     </li>
-                                                    <li>
+                                                    <li class="dashboard-button">
                                                         Boolean blog app
                                                     </li>
                                                 </ul>
@@ -118,29 +119,34 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-4 py-3">
+                                <div class="col-12 col-md-3 py-3">
                                     <div>
                                         <div>Studenti Online negli Ultimi 30 Minuti</div>
-                                        <div>125</div>
+                                        <h3>125</h3>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- MAIN PART OF THE MAIN -->
+
                     <div class="container text-dark" id="dashboard-container">
                         <div class="row">
                             <div class="col-12 col-lg-8 mb-2" id="dashboard-body-one">
                                 <div class="p-2">
-                                    <div class="border">
+
+                                    <!-- TABLE CONTENT -->
+
+                                    <div class="border border-bottom-0">
                                         <h1 class="border-bottom p-2">Prossime Classi</h1>
-                                            <table class="table">
+                                            <table class="table mb-0">
                                                 <thead>
                                                   <tr>
                                                     <th scope="col">Nome</th>
-                                                    <th scope="col"></th>
-                                                    <th scope="col">Data Inizio</th>
-                                                    <th scope="col">ROI</th>
+                                                    <th scope="col" class="w-50"></th>
+                                                    <th scope="col" class="d-none d-lg-table-cell">Data Inizio</th>
+                                                    <th scope="col" class="d-none d-lg-table-cell">ROI</th>
                                                     <th scope="col">Stato</th>
                                                     <th scope="col">Azioni</th>
                                                   </tr>
@@ -150,74 +156,121 @@
                                                     <th scope="row">
                                                         <i class="fa-solid fa-code bg-danger text-white p-2 rounded-circle"></i>
                                                     </th>
-                                                    <td>Classe 75</td>
-                                                    <td>15 Feb 2012</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>Edit/Delete</td>
+                                                    <td class="w-50">Classe 75</td>
+                                                    <td class="d-none d-lg-table-cell">15 Feb 2012</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-success">Done</button>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil border p-2 rounded"></i>
+                                                        <i class="fa-solid fa-trash border p-2 rounded"></i>
+                                                    </td>
                                                   </tr>
                                                   <tr>
                                                     <th scope="row">
                                                         <i class="fa-solid fa-code bg-danger text-white p-2 rounded-circle"></i>
-                                                    </th>                                                    <td>Classe 76</td>
-                                                    <td>16 Feb 2012</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>Edit/Delete</td>
+                                                    </th>                                                    
+                                                    <td class="w-50">Classe 76</td>
+                                                    <td class="d-none d-lg-table-cell">16 Feb 2012</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-success">Done</button>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil border p-2 rounded"></i>
+                                                        <i class="fa-solid fa-trash border p-2 rounded"></i>
+                                                    </td>
                                                   </tr>
                                                   <tr>
                                                     <th scope="row">
                                                         <i class="fa-solid fa-code bg-danger text-white p-2 rounded-circle"></i>
-                                                    </th>                                                    <td>Classe 77</td>
-                                                    <td>17 Feb 2012</td>
-                                                    <td>20%</td>
-                                                    <td>Process</td>
-                                                    <td>Edit/Delete</td>
+                                                    </th>                                                    
+                                                    <td class="w-50">Classe 77</td>
+                                                    <td class="d-none d-lg-table-cell">17 Feb 2012</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-warning">Process</button>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil border p-2 rounded"></i>
+                                                        <i class="fa-solid fa-trash border p-2 rounded"></i>
+                                                    </td>
                                                   </tr>    
-                                                  <tr>                                              <tr>
+                                                  <tr>
                                                     <th scope="row">
                                                         <i class="fa-solid fa-code bg-danger text-white p-2 rounded-circle"></i>
-                                                    </th>                                                    <td>Classe 78</td>
-                                                    <td>18 Feb 2012</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>Edit/Delete</td>
+                                                    </th>                                                    
+                                                    <td class="w-50">Classe 78</td>
+                                                    <td class="d-none d-lg-table-cell">18 Feb 2012</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-success">Done</button>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil border p-2 rounded"></i>
+                                                        <i class="fa-solid fa-trash border p-2 rounded"></i>
+                                                    </td>
                                                   </tr>    
-                                                  <tr>                                              <tr>
+                                                  <tr>
                                                     <th scope="row">
                                                         <i class="fa-solid fa-code bg-danger text-white p-2 rounded-circle"></i>
-                                                    </th>                                                    <td>Classe 79</td>
-                                                    <td>19 Feb 2012</td>
-                                                    <td>20%</td>
-                                                    <td>Failed</td>
-                                                    <td>Edit/Delete</td>
+                                                    </th>                                                    
+                                                    <td class="w-50">Classe 79</td>
+                                                    <td class="d-none d-lg-table-cell">19 Feb 2012</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-danger">Failed</button>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil border p-2 rounded"></i>
+                                                        <i class="fa-solid fa-trash border p-2 rounded"></i>
+                                                    </td>
                                                   </tr>    
-                                                  <tr>                                              <tr>
+                                                  <tr>
                                                     <th scope="row">
                                                         <i class="fa-solid fa-code bg-danger text-white p-2 rounded-circle"></i>
-                                                    </th>                                                    <td>Classe 80</td>
-                                                    <td>20 Feb 2012</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>Edit/Delete</td>
+                                                    </th>                                                    
+                                                    <td class="w-50">Classe 80</td>
+                                                    <td class="d-none d-lg-table-cell">20 Feb 2012</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-success">Done</button>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil border p-2 rounded"></i>
+                                                        <i class="fa-solid fa-trash border p-2 rounded"></i>
+                                                    </td>
                                                   </tr> 
-                                                  <tr>                                              <tr>
+                                                  <tr>
                                                     <th scope="row">
                                                         <i class="fa-solid fa-code bg-danger text-white p-2 rounded-circle"></i>
-                                                    </th>                                                    <td>Classe 81</td>
-                                                    <td>21 Feb 2012</td>
-                                                    <td>20%</td>
-                                                    <td>Failed</td>
-                                                    <td>Edit/Delete</td>
+                                                    </th>                                                    
+                                                    <td class="w-50">Classe 81</td>
+                                                    <td class="d-none d-lg-table-cell">21 Feb 2012</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-danger">Failed</button>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil border p-2 rounded"></i>
+                                                        <i class="fa-solid fa-trash border p-2 rounded"></i>
+                                                    </td>
                                                   </tr>
-                                                  <tr>                                              <tr>
+                                                  <tr>
                                                     <th scope="row">
                                                         <i class="fa-solid fa-code bg-danger text-white p-2 rounded-circle"></i>
-                                                    </th>                                                    <td>Classe 82</td>
-                                                    <td>22 Feb 2012</td>
-                                                    <td>20%</td>
-                                                    <td>Done</td>
-                                                    <td>Edit/Delete</td>
+                                                    </th>                                                    
+                                                    <td class="w-50">Classe 82</td>
+                                                    <td class="d-none d-lg-table-cell">22 Feb 2012</td>
+                                                    <td class="d-none d-lg-table-cell">20%</td>
+                                                    <td>
+                                                        <button type="button" class="btn btn-success">Done</button>
+                                                    </td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil border p-2 rounded"></i>
+                                                        <i class="fa-solid fa-trash border p-2 rounded"></i>
+                                                    </td>
                                                   </tr>
                                                 </tbody>
                                               </table>
@@ -225,6 +278,9 @@
                                     </div>
                                     <div>
                                         <div class="border">
+
+                                            <!-- ACCORDION CONTENT -->
+
                                             <h1 class="border-bottom p-2">F.A.Q.</h1>
                                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                                 <div class="accordion-item">
@@ -261,30 +317,80 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-        
-                            <div class="col-12 col-lg-4" id="dashboard-body-two">
-                                <div class="p-2">
-                                    <div class="border mb-2">
-                                        <div class="mb-2">
-                                            <h1 class="border-bottom p-2">Todo</h1>
-                                            <div class="border mx-2 p-2">
-                                                <input type="checkbox" id="checkbox-1">
-                                                <label for="checkbox-1"> Kickoff Nuove Classi </label>
-                                            </div>
-                                            <div  class="border mx-2 p-2">
-                                                <input type="checkbox" id="checkbox-2">
-                                                <label for="checkbox-2"> Lezione su Bootstrap 5 in Classe #75 </label>
-                                            </div>
-                                            <div  class="border mx-2 p-2">
-                                                <input type="checkbox" id="checkbox-3">
-                                                <label for="checkbox-3"> Controllare username github studenti </label>
+                            
+                                <div class="col-12 col-lg-4" id="dashboard-body-two">
+                                    <div class="p-2">
+
+                                        <!-- TODO-LIST-CONTENT -->
+
+                                        <div class="border mb-2">
+                                            <div class="mb-2">
+                                                <h1 class="border-bottom p-2">Todo</h1>
+                                                <div class="border mx-2 p-2">
+                                                    <input type="checkbox" id="checkbox-1">
+                                                    <label for="checkbox-1"> Kickoff Nuove Classi </label>
+                                                </div>
+                                                <div  class="border mx-2 p-2">
+                                                    <input type="checkbox" id="checkbox-2">
+                                                    <label for="checkbox-2"> Lezione su Bootstrap 5 in Classe #75 </label>
+                                                </div>
+                                                <div  class="border mx-2 p-2">
+                                                    <input type="checkbox" id="checkbox-3">
+                                                    <label for="checkbox-3"> Controllare username github studenti </label>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div class="border">
-                                            imagegoeshere
+
+                                        <!-- STATISTICS CONTENT -->
+
+                                        <div class="border p-2">
+                                            <div>
+
+                                                <!-- MANUALLY-DONE CARD -->
+
+                                                <!-- <img src="./img/stats.jpeg" alt="Stats" class="img-fluid">
+                                                <h3 class="m-2">
+                                                    Utenti attivi
+                                                </h3>
+                                                <div class="m-2">
+                                                    Lista degli utenti attivi in piattaforma nell'ultimo mese
+                                                </div>
+                                                <ul class="list-unstyled mb-0">
+                                                    <li class="border-top">
+                                                        <div class="m-2">Gennaio: 1200</div>
+                                                    </li>
+                                                    <li class="border-top border-bottom">
+                                                        <div class="m-2">Febbraio: 800</div>
+                                                    </li>
+                                                    <li class="border-bottom">
+                                                        <div class="m-2">Marzo: 1500</div>
+                                                    </li>
+                                                </ul>
+                                                <div class="p-2">
+                                                    <a href="https://www.google.com">Visualizza report approfondito</a>
+                                                </div> -->
+
+                                                <!-- BOOTSTRAP STANDARD CARD -->
+
+                                                <div class="card">
+                                                    <img src="./img/stats.jpeg" class="card-img-top" alt="Stats">
+                                                    <div class="card-body p-0">
+                                                      <h5 class="card-title mx-2">Utenti attivi</h5>
+                                                      <p class="card-text mx-2">Lista degli utenti attivi nell'ultimo mese</p>
+                                                      <ul class="list-group">
+                                                        <li class="list-group-item">Gennaio: 1200</li>
+                                                        <li class="list-group-item">Febbraio: 800</li>
+                                                        <li class="list-group-item">Marzo: 1500</li>
+                                                        <li class="list-group-item">
+                                                            <div class="card-body">
+                                                              <a href="#" class="card-link">Visualizza report approfondito</a>
+                                                            </div>
+                                                        </li>
+                                                      </ul>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
