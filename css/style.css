@@ -14,7 +14,7 @@ header {
     height: 5rem;
     width: 100%;
     position: fixed;
-    background-color: brown;
+    background-color: white;
     z-index: 1;
 }
 
@@ -38,6 +38,7 @@ main {
     width: 5rem;
     height: calc(100vh - 5rem);
     background-color: rgb(35, 35, 77);
+    background-image: url("../img/sidebar-bg.png");
 }
 
 @media screen and (min-width: 992px) {
@@ -49,21 +50,22 @@ main {
 /* DASHBOARD CLASSES */
 
 #dashboard-header {
-    height: 15rem;
     width: 100%;
     background-color: cadetblue;
 }
 
-#dashboard-container {
-    height: calc(100vh - 20rem);
+.dashboard-button {
+    border-radius: 15px;
+    background: rgb(32, 32, 235);
+    padding: 3px;
+    font-size: 15px;
+}
+
+#dashboard{
     overflow-y: auto;
 }
 
 @media screen and (min-width: 992px) {
-    #dashboard-header {
-        height: 5rem;
-    }
-
     #dashboard-container {
         height: calc(100vh - 10rem);
     }
